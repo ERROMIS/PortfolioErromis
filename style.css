@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'TAN Nimbus';
+    src: url('TAN_Nimbus/Web/TAN-NIMBUS.ttf') format('truetype');
+}
+
+html {
+    scroll-padding-top: 70px;
+}
+
+body {
+    background-color: #F0F0D6 !important;
+    font-family: 'TAN Nimbus', sans-serif;
+}
+
+.navbar {
+    background-color: #F0F0D6  !important;
+}
+
+.navbar-brand {
+    color: #273233 !important;
+    font-family: 'TAN Nimbus', sans-serif;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    font-size: 35px !important;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+    color: #273233 !important;
+    font-size: 20px !important;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 50%;
+    background-color: #FAB885;
+    transition: width 0.5s ease, left 0.5s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+
+.titre {
+    font-family: 'TAN Nimbus', sans-serif;
+    color: #273233;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.block {
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    color: #273233;
+    font-size: 20px;
+}
+
+.text-block p {
+    color: #6c757d;
+    font-size: 18px;
+}
+
+.about-info li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.about-info li span:first-child {
+    color: #343a40;
+    font-weight: bold;
+    width: 40%;
+}
+
+.about-info a {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+.progress-wrap {
+    position: relative;
+    margin: 20px 0;
+}
+
+.progress {
+    box-shadow: #FAB885 0px 0px 10px 0px;
+    height: 20px !important;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: #FAB885 !important;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15) !important;
+}
+
+.imgProject {
+    margin: auto;
+    padding-top: 70px ;
+    padding-bottom: 70px ;
+    display: flex;
+    max-height: 300px;
+    align-self: center;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: #FAB885 1px solid;
+    margin-bottom: 1.5rem !important; 
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-card .btn {
+    margin-top: auto;
+}
+
+.btn {
+    background-color: #FAB885 !important;
+    border-color: #FAB885 !important;
+}
+
+#contact h3 {
+    color: #273233;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#contact form .form-label {
+    color: #6c757d;
+    font-weight: bold;
+}
+
+#contact form .form-control {
+    border-color: #e5e5e5;
+}
+
+#contact form .form-control:focus {
+    border-color: #FAB885;
+    box-shadow: 0 0 0 0.25rem rgba(250, 184, 133, 0.25);
+}
+
+#contact form textarea.form-control {
+    resize: none;
+}
+
+#contact form button.btn-primary {
+    background-color: #FAB885;
+    border-color: #FAB885;
+}
+
+#contact form button.btn-primary:hover {
+    background-color: #f7a648;
+    border-color: #f7a648;
+}
+
+#contact .list-unstyled li {
+    margin-bottom: 10px;
+}
+
+#contact .list-unstyled li a {
+    color: #273233;
+    font-size: 18px;
+}
+
+#contact .list-unstyled li a:hover {
+    color: #FAB885;
+}

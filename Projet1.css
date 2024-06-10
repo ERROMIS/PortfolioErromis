@@ -1,0 +1,99 @@
+/* Global Styles */
+body {
+    background-color: #F0F0D6 !important;
+    font-family: 'TAN Nimbus', sans-serif;
+}
+
+.navbar {
+    background-color: #F0F0D6 !important;
+}
+
+.navbar-brand {
+    color: #273233 !important;
+    font-family: 'TAN Nimbus', sans-serif;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    font-size: 35px !important;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+    color: #273233 !important;
+    font-size: 20px !important;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 50%;
+    background-color: #FAB885;
+    transition: width 0.5s ease, left 0.5s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+/* Project Details Section */
+.project-details {
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    color: #273233;
+    font-size: 18px;
+}
+
+.project-details h2 {
+    color: #343a40;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.project-details h3 {
+    color: #343a40;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.project-details p {
+    margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .navbar-brand {
+        font-size: 25px !important;
+    }
+
+    .nav-link {
+        font-size: 16px !important;
+    }
+
+    .project-details h2 {
+        font-size: 24px;
+    }
+
+    .project-details h3 {
+        font-size: 20px;
+    }
+
+    .project-details p {
+        font-size: 16px;
+    }
+}
